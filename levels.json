@@ -1,0 +1,40 @@
+{
+ "levels": [
+  {
+   "code": "A1",
+   "id": "a1",
+   "name": "المستوى الأول",
+   "sub": "المبتدئ · Beginner",
+   "file": "a1.json",
+   "words": 900,
+   "theme": "navy"
+  },
+  {
+   "code": "A2",
+   "id": "a2",
+   "name": "المستوى الثاني",
+   "sub": "الأساسي · Elementary",
+   "file": "a2.json",
+   "words": 1200,
+   "theme": "teal"
+  },
+  {
+   "code": "B1",
+   "id": "b1",
+   "name": "المستوى الثالث",
+   "sub": "المتوسط · Intermediate",
+   "file": "b1.json",
+   "words": 1200,
+   "theme": "burgundy"
+  },
+  {
+   "code": "B2",
+   "id": "b2",
+   "name": "المستوى الرابع",
+   "sub": "فوق المتوسط · Upper-Intermediate",
+   "file": "b2.json",
+   "words": 1500,
+   "theme": "purple"
+  }
+ ]
+}
