@@ -3,12 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="المنصة الصوتية لسلسلة العقل الإنجليزي — أكاديمية أيهم: استمع لكل كلمة، اختبر نفسك، ودرّب نطقك.">
+<meta name="description" content="العقل الإنجليزي من أكاديمية أيهم: أربع ملازم من A1 إلى B2 مع منصة صوتية مجانية. استمع لكل كلمة، اختبر نفسك، ودرّب نطقك.">
+<meta name="author" content="م. أيهم محمد قاسم — أكاديمية أيهم">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ayham Academy · أكاديمية أيهم">
+<meta property="og:title" content="العقل الإنجليزي | The English Mind — Ayham Academy">
+<meta property="og:description" content="أربع ملازم من A1 إلى B2 مع منصة صوتية مجانية: صوت لكل كلمة وجملة، واختبارات يومية، وتدريب على النطق.">
+<meta property="og:url" content="https://zd76vda-del.github.io/english-mind/">
+<meta property="og:image" content="https://zd76vda-del.github.io/english-mind/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ar_IQ">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0F2A4A">
 <link rel="icon" href="logo.png">
-<link rel="apple-touch-icon" href="logo.png">
+<link rel="apple-touch-icon" href="img/logo-512.png">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>العقل الإنجليزي | The English Mind</title>
+<title>العقل الإنجليزي | أكاديمية أيهم · Ayham Academy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Lato:wght@400;700;900&family=Poppins:wght@800&display=swap">
 <style>
@@ -48,13 +59,13 @@ a { color: inherit; }
 .seg button { border: 0; background: transparent; color: var(--on-deep); padding: 6px 12px; border-radius: 999px; font-size: 13px; }
 .seg button[aria-pressed="true"] { background: var(--accent); color: #141821; font-weight: 700; }
 
-main { padding-block: 22px 110px; }
+main { padding-block: 22px 34px; }
 .hero h1 { font-size: clamp(24px, 5vw, 34px); line-height: 1.25; margin: 0 0 6px; text-wrap: balance; }
 .hero p { margin: 0; color: var(--mute); max-width: 62ch; }
 .notice { margin-top: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; font-size: 14px; color: var(--mute); }
 
 /* level spines */
-.levels { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin-top: 20px; }
+.levels { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 20px; }
 .lvl { position: relative; display: flex; flex-direction: column; gap: 6px; text-align: start; border: 0; border-radius: var(--r); padding: 18px 18px 16px; background: var(--deep); color: var(--on-deep); min-height: 150px; overflow: hidden; }
 .lvl .code { font-family: var(--f-disp); font-weight: 800; font-size: 44px; line-height: 1; color: var(--accent); direction: ltr; text-align: right; }
 .lvl b { font-size: 18px; }
@@ -209,19 +220,182 @@ section.blk { margin-top: 22px; }
 @media (prefers-reduced-motion: reduce) { .micbtn.rec { animation: none; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } .lvl:hover { transform: none; } }
 @media (max-width: 480px) { .w { font-size: 17px; } .prefs { margin-inline-start: 0; width: 100%; } }
+
+/* ===== brand: header link ===== */
+.navlink { color: var(--on-deep); text-decoration: none; font-size: 14px; font-weight: 500; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.10); white-space: nowrap; }
+.navlink:hover { background: rgba(255,255,255,.18); }
+.navlink[aria-current="page"] { background: var(--accent); color: #141821; font-weight: 700; }
+
+/* ===== poster (home hero) ===== */
+.poster { --glow: #F2B705; position: relative; overflow: hidden; border-radius: 22px; color: #fff; padding: 26px 22px 22px;
+  background: radial-gradient(120% 90% at 15% 110%, color-mix(in srgb, var(--glow) 34%, transparent) 0%, transparent 55%),
+              radial-gradient(90% 70% at 100% 0%, rgba(124,92,255,.28) 0%, transparent 60%), #14122B;
+  display: grid; gap: 22px; grid-template-columns: 1fr; transition: background .6s; }
+.poster::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .18;
+  background-image: radial-gradient(rgba(255,255,255,.55) 1px, transparent 1.2px); background-size: 22px 22px;
+  -webkit-mask-image: linear-gradient(200deg, #000 0%, transparent 55%); mask-image: linear-gradient(200deg, #000 0%, transparent 55%); }
+.p-txt, .p-show { position: relative; z-index: 1; min-width: 0; }
+.p-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.16); border-radius: 999px; padding: 4px 12px 4px 5px; font-size: 13px; font-weight: 500; }
+.p-eyebrow .sep { width: 1px; height: 14px; background: rgba(255,255,255,.3); }
+.p-eyebrow .en-n { font-family: var(--f-en); font-weight: 700; letter-spacing: .04em; }
+.p-eyebrow img { width: 26px; height: 26px; border-radius: 50%; background: #fff; padding: 2px; }
+.poster h1 { margin: 14px 0 0; font-size: clamp(38px, 8vw, 54px); line-height: 1.05; font-weight: 700; letter-spacing: -.01em; }
+.p-en { text-align: right; font-family: var(--f-en); font-weight: 900; letter-spacing: .32em; font-size: 13px; color: var(--glow); margin-top: 8px; transition: color .6s; }
+.poster .p-txt > p { margin: 14px 0 0; color: rgba(255,255,255,.80); font-size: 15.5px; line-height: 1.75; max-width: 46ch; }
+.p-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-top: 18px; }
+.p-stats div { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); border-radius: 12px; padding: 8px 6px; text-align: center; }
+.p-stats b { display: block; font-family: var(--f-en); font-weight: 900; font-size: 19px; line-height: 1.2; }
+.p-stats b.ar { font-family: var(--f-ar); font-weight: 700; font-size: 17px; }
+.p-stats span { display: block; font-size: 11.5px; color: rgba(255,255,255,.70); line-height: 1.3; }
+
+.cf { --cw: min(230px, 54vw); --spread: .62; position: relative; height: calc(var(--cw) * 1.415 + 16px); touch-action: pan-y; user-select: none; -webkit-user-select: none; outline: none; }
+.cf-item { position: absolute; top: 8px; left: 50%; width: var(--cw); aspect-ratio: 910 / 1287; max-width: 100%; border-radius: 6px 12px 12px 6px; overflow: hidden;
+  transform: translateX(calc(-50% + var(--x, 0px))) scale(var(--s, 1)); opacity: var(--o, 1); z-index: var(--z, 1);
+  transition: transform .55s cubic-bezier(.2,.8,.2,1), opacity .45s, filter .45s; box-shadow: 0 18px 40px rgba(0,0,0,.45), 0 2px 0 rgba(255,255,255,.08) inset; filter: brightness(var(--b, 1)); -webkit-tap-highlight-color: transparent; }
+.cf-item img { display: block; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+.cf-item::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 7px; background: linear-gradient(90deg, rgba(0,0,0,.35), transparent); z-index: 1; }
+.cf:focus-visible .cf-item.on { outline: 3px solid var(--glow); outline-offset: 3px; }
+.cf-bar { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 12px; }
+.cf-arrow { width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(255,255,255,.22); background: rgba(255,255,255,.08); color: #fff; display: grid; place-items: center; }
+.cf-arrow svg { width: 18px; height: 18px; }
+.cf-arrow:hover { background: rgba(255,255,255,.16); }
+.cf-dots { display: flex; gap: 6px; }
+.cf-dots button { border: 1px solid rgba(255,255,255,.22); background: transparent; color: rgba(255,255,255,.75); font-family: var(--f-en); font-weight: 900; font-size: 12px; letter-spacing: .04em; padding: 5px 10px; border-radius: 999px; }
+.cf-dots button[aria-selected="true"] { background: var(--glow); border-color: var(--glow); color: #141821; }
+.cf-cap { text-align: center; margin-top: 12px; display: grid; gap: 2px; justify-items: center; }
+.cf-cap b { font-size: 17px; }
+.cf-cap span { font-size: 13px; color: rgba(255,255,255,.72); }
+.cf-cap .btn { margin-top: 10px; background: var(--glow); color: #141821; border-color: transparent; font-weight: 700; text-decoration: none; transition: background .6s; }
+@media (min-width: 760px) {
+  .poster { grid-template-columns: 1.05fr 1fr; align-items: center; padding: 34px 32px 28px; }
+  .cf { --cw: 220px; --spread: .48; }
+}
+
+.sec-h { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin: 34px 0 12px; }
+.sec-h h2 { margin: 0; font-size: 21px; text-wrap: balance; }
+.sec-h span { font-family: var(--f-en); font-size: 12px; font-weight: 700; letter-spacing: .16em; color: var(--mute); text-transform: uppercase; }
+.sec-h + .levels { margin-top: 0; }
+
+/* ===== how it works ===== */
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; counter-reset: st; }
+.step { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 14px 13px; display: grid; gap: 4px; align-content: start; }
+.step .ic { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: var(--soft); color: var(--ink); margin-bottom: 6px; position: relative; }
+.step .ic svg { width: 21px; height: 21px; }
+.step .ic::after { counter-increment: st; content: counter(st); position: absolute; top: -6px; inset-inline-end: -6px; width: 19px; height: 19px; border-radius: 50%; background: var(--deep); color: var(--on-deep); font: 900 11px/19px var(--f-en); text-align: center; }
+.step b { font-size: 15.5px; }
+.step span { font-size: 14px; color: var(--mute); line-height: 1.65; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.chips span { font-size: 13px; padding: 5px 12px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: var(--mute); }
+.chips span::before { content: "✓"; color: var(--deep); font-weight: 700; margin-inline-end: 6px; }
+
+/* ===== trainer ===== */
+.coach { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 22px; display: grid; gap: 18px; grid-template-columns: 1fr; align-items: center; overflow: hidden; }
+.portrait { position: relative; width: min(250px, 72%); aspect-ratio: 1; justify-self: center; clip-path: inset(-30% -10% 0 -10% round 0 0 50% 50%); }
+.portrait .disk { position: absolute; inset: 9% 3% 0 3%; border-radius: 50%; background: radial-gradient(circle at 30% 25%, #FFD45C, #F2A93B 55%, #E58A1F); }
+.portrait .disk::after { content: ""; position: absolute; inset: -7px; border-radius: 50%; border: 2px dashed color-mix(in srgb, #F2A93B 55%, transparent); }
+.portrait img { position: absolute; left: -9%; bottom: 0; width: 118%; max-width: none; height: auto; filter: drop-shadow(0 10px 18px rgba(0,0,0,.18)); }
+.kicker { display: inline-block; font-size: 12.5px; font-weight: 700; color: var(--deep); background: var(--soft); padding: 3px 12px; border-radius: 999px; }
+.coach h2, .about-h h1 { margin: 8px 0 2px; font-size: 26px; line-height: 1.25; }
+.role { margin: 0; color: var(--mute); font-size: 14.5px; }
+.coach .c-txt > p:not(.role) { margin: 12px 0 0; line-height: 1.8; }
+.c-stats { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+.c-stats div { flex: 1 1 90px; border: 1px solid var(--line); border-radius: 12px; padding: 8px 10px; background: var(--bg); }
+.c-stats b { display: block; font-family: var(--f-en); font-weight: 900; font-size: 20px; color: var(--ink); line-height: 1.2; }
+.c-stats span { font-size: 12.5px; color: var(--mute); }
+.c-act { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+.c-act .btn { text-decoration: none; }
+@media (min-width: 700px) { .coach { grid-template-columns: 240px 1fr; padding: 26px 28px; } .portrait { width: 100%; } }
+
+/* ===== socials ===== */
+.socials { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px; }
+.soc { display: flex; align-items: center; gap: 12px; text-decoration: none; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 11px 14px; min-width: 0; }
+.soc:hover { border-color: var(--deep); }
+.soc .si { flex: none; width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; color: #fff; }
+.soc .si svg { width: 21px; height: 21px; }
+.soc .si.ig { background: linear-gradient(135deg, #7C3AED, #DB2777 55%, #F59E0B); }
+.soc .si.tg { background: #229ED9; }
+.soc .st { min-width: 0; display: grid; }
+.soc .st small { font-size: 12px; color: var(--mute); }
+.soc .st b { font-family: var(--f-en); font-size: 15px; direction: ltr; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.soc .go { margin-inline-start: auto; color: var(--mute); flex: none; }
+.soc .go svg { width: 16px; height: 16px; }
+
+.acad { margin-top: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 20px 22px; display: grid; gap: 16px; }
+.acad-h { display: flex; gap: 14px; align-items: center; }
+.logo-tile { flex: none; display: grid; place-items: center; background: #fff; border-radius: 18px; padding: 8px; box-shadow: 0 0 0 1px var(--line), 0 6px 18px rgba(15,42,74,.10); }
+.logo-tile img { display: block; width: 128px; height: auto; }
+.acad-tag { margin-top: 4px !important; font-size: 14px !important; }
+@media (max-width: 460px) { .acad-h { flex-direction: column; text-align: center; } .acad-h h3 .en { text-align: center !important; } }
+.acad-h h3 { margin: 0; font-size: 19px; }
+.acad-h h3 .en { display: block; font-family: var(--f-en); font-size: 14px; letter-spacing: .04em; color: var(--mute); font-weight: 700; text-align: right; }
+.acad p { margin: 0; color: var(--mute); line-height: 1.8; font-size: 14.5px; }
+
+/* ===== about page ===== */
+.about-h { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 22px; display: grid; gap: 16px; text-align: center; justify-items: center; }
+.about-h .portrait { width: min(230px, 70%); }
+.about-h .role { max-width: 52ch; }
+.about-h .c-stats { width: 100%; max-width: 520px; }
+@media (min-width: 700px) { .about-h { grid-template-columns: 220px 1fr; text-align: start; justify-items: start; align-items: center; } .about-h .portrait { width: 100%; } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 16px 18px; }
+.card p { margin: 0; line-height: 1.85; }
+.tl { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.tl li { position: relative; padding: 10px 26px 10px 0; border-inline-start: 0; }
+.tl li::before { content: ""; position: absolute; right: 6px; top: 18px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px var(--soft); }
+.tl li::after { content: ""; position: absolute; right: 10px; top: 32px; bottom: -10px; width: 2px; background: var(--line); }
+.tl li:last-child::after { display: none; }
+.tl b { display: block; font-size: 15.5px; }
+.tl span { color: var(--mute); font-size: 14px; }
+.dots { margin: 0; padding: 0 20px 0 0; display: grid; gap: 6px; line-height: 1.75; }
+.dots li::marker { color: var(--accent); }
+.partners { margin: 4px 0 0 !important; font-size: 12.5px !important; color: var(--mute); line-height: 1.8 !important; border-top: 1px dashed var(--line); padding-top: 12px; }
+.partners span { font-weight: 700; color: var(--ink); opacity: .75; margin-inline-end: 4px; }
+.card .partners { margin-top: 14px !important; }
+.prog { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
+.prog .card b { display: block; font-size: 15.5px; margin-bottom: 4px; }
+.prog .card span { color: var(--mute); font-size: 14px; line-height: 1.7; display: block; }
+
+/* ===== site footer ===== */
+.site-foot { background: var(--deep); color: var(--on-deep); margin-top: 10px; }
+.site-foot .wrap { padding-block: 26px calc(30px + env(safe-area-inset-bottom, 0px)); display: grid; gap: 16px; }
+body:has(#player:not([hidden])) .site-foot .wrap { padding-bottom: 110px; }
+.f-top { display: flex; gap: 14px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.f-brand { display: flex; align-items: center; gap: 10px; }
+.f-brand { gap: 14px; }
+.f-tile { border-radius: 14px; padding: 6px; box-shadow: none; }
+.f-tile img { width: 84px; }
+.f-brand b { display: block; font-size: 16px; }
+.f-brand span { display: block; font-family: var(--f-en); font-size: 12.5px; letter-spacing: .04em; text-align: right; color: var(--on-deep-mute); }
+.f-icons { display: flex; gap: 8px; }
+.f-icons a { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,.10); color: var(--on-deep); }
+.f-icons a:hover { background: var(--accent); color: #141821; }
+.f-icons svg { width: 19px; height: 19px; }
+.f-nav { display: flex; gap: 16px; flex-wrap: wrap; font-size: 14px; }
+.f-nav a { color: var(--on-deep-mute); text-decoration: none; }
+.f-nav a:hover { color: var(--on-deep); }
+.f-copy { margin: 0; font-size: 12.5px; color: var(--on-deep-mute); line-height: 1.7; border-top: 1px solid rgba(255,255,255,.12); padding-top: 14px; }
+@media (prefers-reduced-motion: reduce) { .cf-item, .poster, .p-en, .cf-cap .btn { transition: none; } }
 </style>
 </head>
 <body>
 
 <div dir="rtl" id="app" data-level="a2">
   <header class="bar"><div class="wrap">
-    <a class="brand" href="#" aria-label="الصفحة الرئيسية"><img src="logo.png" alt=""><div><b>العقل الإنجليزي</b><span>ENGLISH MIND · AUDIO</span></div></a>
+    <a class="brand" href="#" aria-label="الصفحة الرئيسية"><img src="logo.png" alt=""><div><b>العقل الإنجليزي</b><span>AYHAM ACADEMY</span></div></a>
+    <a class="navlink" id="nav-about" href="#about">عن المدرّب</a>
     <div class="prefs">
       <div class="seg" role="group" aria-label="اللهجة"><button id="acc-us" data-acc="us">أمريكي</button><button id="acc-uk" data-acc="uk">بريطاني</button></div>
       <div class="seg" role="group" aria-label="السرعة"><button id="rate-slow" data-rate="0.72">بطيء</button><button id="rate-norm" data-rate="0.95">عادي</button></div>
     </div>
   </div></header>
   <main class="wrap" id="view" aria-live="polite"></main>
+  <footer class="site-foot"><div class="wrap">
+    <div class="f-top">
+      <div class="f-brand"><span class="logo-tile f-tile"><img src="img/logo-full.png" alt="شعار أكاديمية أيهم — Ayham Academy" width="560" height="544" loading="lazy"></span><div><b>أكاديمية أيهم</b><span dir="ltr">Ayham Academy · The English Mind</span></div></div>
+      <div class="f-icons" id="f-icons"></div>
+    </div>
+    <nav class="f-nav" aria-label="روابط الموقع"><a href="#">الرئيسية</a><a href="#a1">A1</a><a href="#a2">A2</a><a href="#b1">B1</a><a href="#b2">B2</a><a href="#about">عن المدرّب</a></nav>
+    <p class="f-copy">© 2026 أكاديمية أيهم <span dir="ltr">Ayham Academy</span> · م. أيهم محمد قاسم. جميع الحقوق محفوظة. يُمنع نسخ محتوى ملازم «العقل الإنجليزي» أو هذه المنصّة أو إعادة نشره دون إذن.</p>
+  </div></footer>
   <div class="player" id="player" hidden><div class="wrap">
     <div class="now" id="now"></div>
     <button class="btn primary" id="stop"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>إيقاف</button>
@@ -243,6 +417,36 @@ section.blk { margin-top: 22px; }
   const ICON_MIC = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>';
   const ICON_QUIZ = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l2 2 4-4"/><rect x="3" y="3" width="18" height="18" rx="4"/></svg>';
   const app = $('#app'), view = $('#view');
+
+  /* ---------------- brand ---------------- */
+  // روابط الحسابات: عدّلها هنا فقط
+  const SOCIAL = [
+    { k: 'ig', who: 'حساب الأكاديمية', name: 'Instagram', handle: '@ayham_academy', url: 'https://instagram.com/ayham_academy' },
+    { k: 'tg', who: 'قناة الأكاديمية', name: 'Telegram', handle: 't.me/Ayhamacademy', url: 'https://t.me/Ayhamacademy' },
+    { k: 'ig', who: 'حساب المدرّب', name: 'Instagram', handle: '@ayham_coach', url: 'https://instagram.com/ayham_coach' }
+  ];
+  const SICON = {
+    ig: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"/></svg>',
+    tg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>'
+  };
+  const ICON_OUT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M21 3l-9 9"/><path d="M19 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg>';
+  const CHEV = d => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${d > 0 ? 'M15 6l-6 6 6 6' : 'M9 6l6 6-6 6'}"/></svg>`;
+  const ICON_SCAN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><path d="M8 9h3v3H8zM13 13h3v3h-3zM13 9h3M8 15h2"/></svg>';
+  const ICON_HEAD = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="2.5" y="14" width="5" height="7" rx="2"/><rect x="16.5" y="14" width="5" height="7" rx="2"/></svg>';
+  const socLink = x => `<a class="soc" href="${x.url}" target="_blank" rel="noopener"><span class="si ${x.k}">${SICON[x.k]}</span><span class="st"><small>${esc(x.who)} · ${esc(x.name)}</small><b>${esc(x.handle)}</b></span><span class="go">${ICON_OUT}</span></a>`;
+  const BOOKS = [
+    { id: 'a1', code: 'A1', name: 'المستوى الأول', sub: 'المبتدئ · Beginner', words: '900', glow: '#F2B705' },
+    { id: 'a2', code: 'A2', name: 'المستوى الثاني', sub: 'الأساسي · Elementary', words: '1,200', glow: '#FF7A59' },
+    { id: 'b1', code: 'B1', name: 'المستوى الثالث', sub: 'المتوسط · Intermediate', words: '1,200', glow: '#E0A93F' },
+    { id: 'b2', code: 'B2', name: 'المستوى الرابع', sub: 'فوق المتوسط · Upper-Intermediate', words: '1,500', glow: '#B58CFF' }
+  ];
+  const portrait = () => '<div class="portrait"><span class="disk"></span><img src="img/ayham.webp" alt="م. أيهم محمد قاسم" width="720" height="578"></div>';
+  const STATS = '<div class="c-stats"><div><b>+50</b><span>برنامجاً تدريبياً</span></div><div><b>+8,000</b><span>متدرّب</span></div><div><b>4</b><span>ملازم في السلسلة</span></div></div>';
+  function paintFooter() {
+    const f = $('#f-icons'); if (!f) return;
+    f.innerHTML = SOCIAL.map(x => `<a href="${x.url}" target="_blank" rel="noopener" aria-label="${esc(x.name + ' ' + x.handle)}" title="${esc(x.handle)}">${SICON[x.k]}</a>`).join('');
+  }
+  paintFooter();
   const state = { levels: [], cache: {}, accent: store.get('accent', 'us'), rate: parseFloat(store.get('rate', '0.95')) };
 
   /* ---------------- speech ---------------- */
@@ -311,26 +515,160 @@ section.blk { margin-top: 22px; }
   const pad = n => String(n).padStart(2, '0');
 
   /* ---------------- views ---------------- */
+  let cfTimer = null, cfPaint = null;
+  window.addEventListener('resize', () => { if (cfPaint) cfPaint(); }, { passive: true });
   async function home() {
-    app.dataset.level = 'a2';
+    app.dataset.level = 'a1';
     const ls = await levels();
     view.innerHTML = `
-      <div class="hero"><h1>استمع إلى كل كلمة وجملة في ملزمتك</h1>
-      <p>اختر المستوى ثم اليوم، واضغط زر التشغيل بجانب أي كلمة أو جملة. أو امسح رمز QR الموجود في صفحة اليوم داخل الملزمة لتصل إليه مباشرة.</p></div>
+      <section class="poster" id="poster" aria-label="سلسلة العقل الإنجليزي">
+        <div class="p-txt">
+          <span class="p-eyebrow"><img src="logo.png" alt="">أكاديمية أيهم <i class="sep"></i><span dir="ltr" class="en-n">Ayham Academy</span></span>
+          <h1>العقل الإنجليزي</h1>
+          <div class="p-en" dir="ltr">THE ENGLISH MIND</div>
+          <p>أربع ملازم تأخذك خطوة بخطوة من الصفر حتى المستوى فوق المتوسط، ومعها هذه المنصّة المجانية: صوت لكل كلمة وجملة، واختبار لكل يوم، وتدريب على النطق.</p>
+          <div class="p-stats"><div><b>4</b><span>مستويات</span></div><div><b>4,800</b><span>كلمة وتعبير</span></div><div><b>120</b><span>يوماً</span></div><div><b class="ar">مجاناً</b><span>بلا تسجيل</span></div></div>
+        </div>
+        <div class="p-show">
+          <div class="cf" id="cf" tabindex="0" role="group" aria-roledescription="carousel" aria-label="أغلفة ملازم السلسلة">
+            ${BOOKS.map((b, i) => `<a class="cf-item" data-i="${i}" href="#${b.id}" aria-label="${esc(b.name)} ${b.code}"><img src="img/cover-${b.id}.jpg" alt="غلاف ملزمة العقل الإنجليزي — ${esc(b.name)} ${b.code}" draggable="false" ${i ? 'loading="lazy"' : ''}></a>`).join('')}
+          </div>
+          <div class="cf-bar">
+            <button class="cf-arrow" data-dir="-1" aria-label="الملزمة السابقة">${CHEV(-1)}</button>
+            <div class="cf-dots" role="tablist" aria-label="اختر الملزمة">${BOOKS.map((b, i) => `<button role="tab" data-i="${i}" dir="ltr">${b.code}</button>`).join('')}</div>
+            <button class="cf-arrow" data-dir="1" aria-label="الملزمة التالية">${CHEV(1)}</button>
+          </div>
+          <div class="cf-cap" aria-live="polite"><b id="cf-name"></b><span id="cf-sub"></span><a class="btn" id="cf-go" href="#a1">افتح هذا المستوى</a></div>
+        </div>
+      </section>
+
+      <div class="sec-h"><h2>ابدأ من مستواك</h2><span>Choose your level</span></div>
       <div class="levels">${ls.map(l => `
         <button class="lvl" data-level="${l.id}" ${l.file ? '' : 'disabled'} data-go="${l.id}">
           <span class="code" dir="ltr">${esc(l.code)}</span><b>${esc(l.name)}</b><small>${esc(l.sub)}</small>
           <span class="meta">${l.file ? `<span>30 يوماً</span><span dir="ltr">${l.words} words</span>` : '<span>30 يوماً</span><em>قريباً</em>'}</span>
         </button>`).join('')}</div>
-      <div class="how">
-        <div><b>امسح رمز QR</b><span>في أعلى كل يوم داخل الملزمة رمز يفتح لك صفحة ذلك اليوم.</span></div>
-        <div><b>كرّر بعد الصوت</b><span>زر «وضع الترديد» يقرأ كل كلمة ثم يترك لك ثانيتين لتكررها.</span></div>
-        <div><b>اختبر نفسك</b><span>لكل يوم اختبار تفاعلي من 10 أسئلة، ومراجعة يومية جديدة من الأيام التي درستها.</span></div>
-        <div><b>درّب نطقك</b><span>استمع للنموذج، ثم انطق الكلمة أو الجملة لترى نسبة المطابقة والكلمات التي تحتاج تدريباً.</span></div>
-        <div><b>غيّر اللهجة والسرعة</b><span>من الأعلى: أمريكي أو بريطاني، بطيء أو عادي.</span></div>
+
+      <div class="sec-h"><h2>كيف تستخدم المنصّة؟</h2><span>How it works</span></div>
+      <div class="steps">
+        <div class="step"><span class="ic">${ICON_SCAN}</span><b>امسح رمز اليوم</b><span>في أعلى كل يوم داخل الملزمة رمز QR يفتح صفحته هنا مباشرة. أو اختر المستوى ثم اليوم من القائمة.</span></div>
+        <div class="step"><span class="ic">${ICON_HEAD}</span><b>استمع وكرّر</b><span>اضغط زر التشغيل بجانب أي كلمة أو جملة. «وضع الترديد» يقرأ الكلمة ويترك لك وقتاً لتكرّرها.</span></div>
+        <div class="step"><span class="ic">${ICON_QUIZ}</span><b>اختبر نفسك</b><span>اختبار من 10 أسئلة لكل يوم بتصحيح فوري، ومراجعة يومية جديدة من الأيام التي درستها.</span></div>
+        <div class="step"><span class="ic">${ICON_MIC}</span><b>درّب نطقك</b><span>انطق الكلمة بالميكروفون، وتخبرك المنصّة بنسبة المطابقة والكلمات التي تحتاج تدريباً.</span></div>
       </div>
-      <p class="foot">أكاديمية أيهم · م. أيهم محمد قاسم · © 2026</p>`;
+      <div class="chips"><span>لهجة أمريكية أو بريطانية</span><span>سرعة بطيئة أو عادية</span><span>بحث بالعربي والإنجليزي</span><span>تقدّمك يُحفظ على جهازك</span><span>مجانية وبدون حساب</span><span>للهاتف والحاسبة</span></div>
+
+      <div class="sec-h"><h2>المدرّب ومؤلف السلسلة</h2><span>Meet your trainer</span></div>
+      <section class="coach">
+        ${portrait()}
+        <div class="c-txt">
+          <span class="kicker">مؤلف «العقل الإنجليزي»</span>
+          <h2>م. أيهم محمد قاسم</h2>
+          <p class="role">مهندس أمن سيبراني وذكاء اصطناعي · المؤسس والرئيس التنفيذي لأكاديمية أيهم <span dir="ltr">(Ayham Academy)</span></p>
+          <p>صمّم سلسلة «العقل الإنجليزي» لتكون طريقاً واضحاً لتعلّم الإنجليزية: كلمات من الحياة الحقيقية، وقواعد مبسّطة، وتمارين يومية، ومنصّة صوتية ترافقك في كل صفحة.</p>
+          ${STATS}
+          <div class="c-act"><a class="btn primary" href="#about">السيرة الكاملة</a></div>
+        </div>
+      </section>
+
+      <section class="acad">
+        <div class="acad-h"><span class="logo-tile"><img src="img/logo-full.png" alt="شعار أكاديمية أيهم — Ayham Academy" width="560" height="544"></span><div><h3>أكاديمية أيهم <span class="en" dir="ltr">Ayham Academy</span></h3><p class="acad-tag">نُعلّم الشباب العراقي مهارات المستقبل مجاناً</p></div></div>
+        <p>منظمة شبابية عراقية غير ربحية تقدّم دورات وورشاً مجانية في التسويق والمهارات الشخصية والتكنولوجيا، ومنها برنامج المحادثة «<span dir="ltr">Let’s Talk in English</span>». تابعنا لتصلك الدورات والورش الجديدة أولاً.</p>
+        <div class="socials">${SOCIAL.map(socLink).join('')}</div>
+        <p class="partners"><span>تعاونت الأكاديمية مع</span> محافظة بغداد · وزارة الشباب والرياضة · الجامعة الأمريكية في العراق – بغداد · السفارة الأمريكية في بغداد</p>
+      </section>`;
     view.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => { if (!b.disabled) location.hash = b.dataset.go; }));
+    initCarousel();
+  }
+
+  function initCarousel() {
+    const cf = $('#cf'); if (!cf) return;
+    const items = [...cf.querySelectorAll('.cf-item')], dots = [...view.querySelectorAll('.cf-dots button')], N = items.length;
+    const poster = $('#poster');
+    let i = 0, x0 = null, moved = false;
+    const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function paint() {
+      if (!document.contains(cf)) { cfPaint = null; return; }
+      const w = items[i].offsetWidth || 220, k0 = parseFloat(getComputedStyle(cf).getPropertyValue('--spread')) || .62;
+      items.forEach((el, k) => {
+        let d = ((k - i) % N + N) % N; if (d > N / 2) d -= N;          // -1 … 2
+        const vis = Math.abs(d) <= 1;
+        el.style.setProperty('--x', `${-d * w * k0}px`);              // RTL: التالي إلى اليسار
+        el.style.setProperty('--s', d === 0 ? 1 : vis ? 0.8 : 0.62);
+        el.style.setProperty('--o', vis ? 1 : 0);
+        el.style.setProperty('--b', d === 0 ? 1 : 0.62);
+        el.style.setProperty('--z', d === 0 ? 3 : vis ? 2 : 1);
+        el.classList.toggle('on', d === 0);
+        el.tabIndex = d === 0 ? 0 : -1; el.setAttribute('aria-hidden', d === 0 ? 'false' : 'true');
+      });
+      dots.forEach((b, k) => b.setAttribute('aria-selected', k === i ? 'true' : 'false'));
+      const B = BOOKS[i];
+      poster.style.setProperty('--glow', B.glow);
+      $('#cf-name').textContent = `${B.name} · ${B.code}`;
+      $('#cf-sub').textContent = `${B.sub} · ${B.words} كلمة · 30 يوماً`;
+      $('#cf-go').href = '#' + B.id;
+    }
+    const go = k => { i = ((k % N) + N) % N; paint(); };
+    const user = () => { if (cfTimer) { clearInterval(cfTimer); cfTimer = null; } };
+    view.querySelectorAll('.cf-arrow').forEach(b => b.addEventListener('click', () => { user(); go(i + Number(b.dataset.dir)); }));
+    dots.forEach((b, k) => b.addEventListener('click', () => { user(); go(k); }));
+    cf.addEventListener('keydown', e => {
+      if (e.key === 'ArrowLeft') { user(); go(i + 1); e.preventDefault(); }
+      else if (e.key === 'ArrowRight') { user(); go(i - 1); e.preventDefault(); }
+      else if (e.key === 'Enter') { location.hash = BOOKS[i].id; }
+    });
+    cf.addEventListener('pointerdown', e => { x0 = e.clientX; moved = false; });
+    cf.addEventListener('pointermove', e => { if (x0 !== null && Math.abs(e.clientX - x0) > 8) moved = true; });
+    const up = e => {
+      if (x0 === null) return; const dx = e.clientX - x0; x0 = null;
+      if (Math.abs(dx) > 40) { user(); go(i + (dx > 0 ? 1 : -1)); }
+    };
+    cf.addEventListener('pointerup', up); cf.addEventListener('pointercancel', () => { x0 = null; });
+    items.forEach((el, k) => el.addEventListener('click', e => {
+      if (moved) { e.preventDefault(); moved = false; return; }
+      if (k !== i) { e.preventDefault(); user(); go(k); }
+    }));
+    cfPaint = paint;
+    paint();
+    if (cfTimer) clearInterval(cfTimer);
+    if (!reduce) cfTimer = setInterval(() => { if (!document.hidden && document.contains(cf)) go(i + 1); }, 4500);
+  }
+
+  function aboutView() {
+    app.dataset.level = 'a1';
+    view.innerHTML = `
+      <nav class="crumbs"><a href="#">الرئيسية</a><span>›</span><span>عن المدرّب</span></nav>
+      <section class="about-h">
+        ${portrait()}
+        <div>
+          <span class="kicker">مؤلف سلسلة «العقل الإنجليزي»</span>
+          <h1>م. أيهم محمد قاسم</h1>
+          <p class="role">مهندس أمن سيبراني وذكاء اصطناعي · المؤسس والرئيس التنفيذي لأكاديمية أيهم <span dir="ltr">(Ayham Academy)</span></p>
+          ${STATS}
+        </div>
+      </section>
+
+      <div class="sec-h"><h2>نبذة</h2><span>About</span></div>
+      <div class="card"><p>م. أيهم محمد قاسم مهندس في الأمن السيبراني والذكاء الاصطناعي، ومؤسس أكاديمية أيهم ورئيسها التنفيذي، ومدرّب في ألعاب العقل ومكعّب روبيك. قدّم أكثر من 50 برنامجاً بين دورات وورش وأعمال تطوعية، وساهم في تدريب أكثر من 8,000 شخص في مجالات مختلفة. ألّف سلسلة «العقل الإنجليزي» لتعليم اللغة الإنجليزية من المستوى <span dir="ltr">A1</span> حتى <span dir="ltr">B2</span>، وصمّم معها هذه المنصّة الصوتية المجانية.</p></div>
+
+      <div class="sec-h"><h2>الخبرات والأدوار</h2><span>Experience</span></div>
+      <div class="card"><ul class="tl">
+        <li><b>المؤسس والرئيس التنفيذي — أكاديمية أيهم <span dir="ltr">Ayham Academy</span></b><span>منظمة شبابية عراقية غير ربحية للدورات والورش المجانية في التسويق والمهارات الشخصية والتكنولوجيا.</span></li>
+        <li><b>مؤلف سلسلة «العقل الإنجليزي»</b><span>أربع ملازم لتعليم الإنجليزية من <span dir="ltr">A1</span> إلى <span dir="ltr">B2</span>، مع منصّة صوتية واختبارات تفاعلية.</span></li>
+        <li><b>مدرّب ألعاب العقل ومكعّب روبيك</b><span>تدريب الأطفال والشباب على ألعاب الذكاء ومكعّب روبيك لتنمية التفكير والتركيز وحلّ المشكلات، وتنظيم الأنشطة والفعاليات التعليمية للأطفال.</span></li>
+      </ul></div>
+
+      <div class="sec-h"><h2>من نشاطات الأكاديمية</h2><span>Activities</span></div>
+      <div class="card"><ul class="dots">
+        <li>برنامج المحادثة «<span dir="ltr">Let’s Talk in English</span>» للشباب، بموضوع جديد في كل جلسة.</li>
+        <li>ورشة «القراءة في عصر الذكاء الاصطناعي».</li>
+        <li>دورات وورش مجانية في التسويق والمهارات الشخصية والتكنولوجيا.</li>
+      </ul>
+      <p class="partners"><span>تعاونت الأكاديمية مع</span> محافظة بغداد · وزارة الشباب والرياضة · الجامعة الأمريكية في العراق – بغداد · السفارة الأمريكية في بغداد</p></div>
+
+      <div class="sec-h"><h2>تابِع وتواصل</h2><span>Follow</span></div>
+      <div class="socials">${SOCIAL.map(socLink).join('')}</div>`;
+    window.scrollTo(0, 0);
   }
 
   async function levelView(id) {
@@ -656,6 +994,8 @@ section.blk { margin-top: 22px; }
   async function route() {
     stop(); closeMic(); if (micMode === 'live') micMode = 'unknown';
     const h = location.hash.replace('#', '');
+    if (cfTimer) { clearInterval(cfTimer); cfTimer = null; }
+    const na = $('#nav-about'); if (na) { if (h === 'about') na.setAttribute('aria-current', 'page'); else na.removeAttribute('aria-current'); }
     try {
       let m;
       if ((m = h.match(/^([a-z]\d)-d(\d{1,2})-quiz$/))) await quizView(m[1], parseInt(m[2], 10));
@@ -663,6 +1003,7 @@ section.blk { margin-top: 22px; }
       else if ((m = h.match(/^([a-z]\d)-review$/))) await reviewView(m[1]);
       else if ((m = h.match(/^([a-z]\d)-d(\d{1,2})$/))) await dayView(m[1], parseInt(m[2], 10));
       else if (/^[a-z]\d$/.test(h)) await levelView(h);
+      else if (h === 'about') aboutView();
       else await home();
     } catch (e) {
       view.innerHTML = '<div class="err">تعذّر تحميل المحتوى. تحقق من اتصالك بالإنترنت ثم أعد فتح الصفحة.</div>';
