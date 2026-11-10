@@ -35,6 +35,15 @@
    "file": "b2.json",
    "words": 1500,
    "theme": "purple"
+  },
+  {
+   "code": "C1",
+   "id": "c1",
+   "name": "المستوى الخامس",
+   "sub": "المتقدّم · Advanced",
+   "file": "c1.json",
+   "words": 1500,
+   "theme": "graphite"
   }
  ]
 }
